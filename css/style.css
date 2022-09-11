@@ -390,6 +390,7 @@ header {
     padding: 8px 20px;
     font-size: 16px;
     border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
 }
 
 .footer_subscribe_input {
@@ -422,4 +423,7 @@ header {
 
 footer {
     background: var(--sub-white-border);
+}
+.footer_logo img {
+    max-width: 150px;
 }
