@@ -1,19 +1,3 @@
-let transTime = 100;
-
-$(".list_li").click(function(){
-    let cat_type = $(this).attr("data-filter");
-
-    if(cat_type == 'All'){
-        $(".item_box").show(transTime);
-    }else{
-        $(".item_box").not("."+cat_type).hide(transTime);
-        $(".item_box").filter("."+cat_type).show(transTime);
-    }
-
-    $(this).addClass("active_list_li").siblings().removeClass("active_list_li")
-})
-
-
 // ====== events for side-bar
 // defaults
 $(".side_bar_back").hide();
@@ -57,3 +41,27 @@ $(".side_bar_back").click(function(){
 let item_bar_back_width = (eval($("#showen_item").text())*100) / eval($("#tot_item").text());
 
 $(".item_bar_back").css("width", item_bar_back_width+"px");
+
+
+// owl carosol ===========
+
+try {
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            // nav:true,
+            dots: true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                }
+            }
+        })
+    });
+} catch (error) {
+    console.warn("Owl Carousel Not Found")
+}

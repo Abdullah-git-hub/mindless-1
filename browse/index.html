@@ -100,23 +100,25 @@
     <section id="catagory">
 
         <div class="catagory_list">
-            <ul>
-                <li class="list_li active_list_li" data-filter="All">All</li>
-                <li class="list_li_p">GIFT CARDS</li>
-                <li class="list_li" data-filter="Top_Products">Top Products</li>
-                <li class="list_li" data-filter="Cat_1">Cat_1</li>
-                <li class="list_li" data-filter="Cat_2">Cat_2</li>
-                <li class="list_li" data-filter="Cat_3">Cat_3</li>
-                <li class="list_li_p">REFILLS</li>
-                <li class="list_li" data-filter="Cat_4">Cat_4</li>
-                <li class="list_li" data-filter="Cat_5">Cat_5</li>
-                <li class="list_li" data-filter="Cat_6">Cat_6</li>
-                <li class="list_li_p">CRYPTO UTILITIES</li>
-                <li class="list_li" data-filter="Cat_7">Cat_6</li>
-                <li class="list_li" data-filter="Cat_8">Cat_6</li>
-                <li class="list_li" data-filter="Cat_9">Cat_6</li>
-                <li class="list_li" data-filter="Cat_10">Cat_6</li>
-            </ul>
+            <form id="catagory_list_form">
+                <ul>
+                    <li class="list_li active_list_li" data-filter="All">All</li>
+                    <li class="list_li_p">GIFT CARDS</li>
+                    <li class="list_li" data-filter="Top_Products">Top Products</li>
+                    <li class="list_li" data-filter="Cat_1"><input type="checkbox" name="catagory_checkbox" value="Cat_1"> Cat_1</li>
+                    <li class="list_li" data-filter="Cat_2"><input type="checkbox" name="catagory_checkbox" value="Cat_2"> Cat_2</li>
+                    <li class="list_li" data-filter="Cat_3"><input type="checkbox" name="catagory_checkbox" value="Cat_3"> Cat_3</li>
+                    <li class="list_li_p">REFILLS</li>
+                    <li class="list_li" data-filter="Cat_4"><input type="checkbox" name="catagory_checkbox" value="Cat_4"> Cat_4</li>
+                    <li class="list_li" data-filter="Cat_5"><input type="checkbox" name="catagory_checkbox" value="Cat_5"> Cat_5</li>
+                    <li class="list_li" data-filter="Cat_6"><input type="checkbox" name="catagory_checkbox" value="Cat_6"> Cat_6</li>
+                    <li class="list_li_p">CRYPTO UTILITIES</li>
+                    <li class="list_li" data-filter="Cat_7"><input type="checkbox" name="catagory_checkbox" value="Cat_6"> Cat_6</li>
+                    <li class="list_li" data-filter="Cat_8"><input type="checkbox" name="catagory_checkbox" value="Cat_6"> Cat_6</li>
+                    <li class="list_li" data-filter="Cat_9"><input type="checkbox" name="catagory_checkbox" value="Cat_6"> Cat_6</li>
+                    <li class="list_li" data-filter="Cat_10"><input type="checkbox" name="catagory_checkbox" value="Cat_6"> Cat_6</li>
+                </ul>
+            </form>
         </div>
         <div class="catagory_items">
             <div class="section_heading catagory_items_heading">
@@ -278,5 +280,6 @@
     </footer>
     
     <script src="../js/main.js"></script>
+    <script src="../js/browse.js"></script>
 </body>
 </html>
